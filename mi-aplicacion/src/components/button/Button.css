@@ -1,0 +1,43 @@
+.button {
+    width: 98.19px;
+    height: 34px;
+    border-radius: 33px;
+    border-width: 1px;
+    padding: 8px 12px;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Variante sólida (como el botón de Contactar) */
+.solid {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+}
+
+.solid:hover {
+    background-color: #b91c1c;
+}
+
+/* Variante outline (como el botón de Tienda) */
+.outline {
+    background-color: transparent;
+    border: 1px solid #1f2937;
+    color: #1f2937;
+}
+
+.outline:hover {
+    background-color: #f3f4f6;
+}
