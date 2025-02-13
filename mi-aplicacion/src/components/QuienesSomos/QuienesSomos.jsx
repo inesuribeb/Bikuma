@@ -1,6 +1,7 @@
 function QuienesSomos () {
     return (
-        <div></div>
+        <div>
+        </div>
     )
 }
 
