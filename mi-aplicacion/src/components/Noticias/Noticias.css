@@ -1,3 +1,12 @@
+.noticias-container {
+    background-color: #F5F9FF;
+    height: 785px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; /* Centra horizontalmente */
+   align-items: center; 
+}
+
 .all-news-container {
     display: flex;
     overflow-x: scroll; /* Permite scroll horizontal */
