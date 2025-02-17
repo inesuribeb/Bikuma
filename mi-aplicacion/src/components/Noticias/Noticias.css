@@ -1,0 +1,16 @@
+.all-news-container {
+    display: flex;
+    overflow-x: scroll; /* Permite scroll horizontal */
+    /* Oculta la barra de scroll pero mantiene la funcionalidad */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    gap: 24px; /* Espacio entre tarjetas */
+    padding: 40px; 
+    scroll-behavior: smooth;
+}
+
+
+/* Oculta la barra de scroll en Chrome/Safari */
+.all-news-container::-webkit-scrollbar {
+    display: none;
+}
