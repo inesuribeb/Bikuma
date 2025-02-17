@@ -25,6 +25,7 @@
     background-color: #dc2626;
     color: white;
     border: none;
+    width: fit-content;
 }
 
 .solid:hover {
@@ -36,6 +37,8 @@
     background-color: transparent;
     border: 1px solid #1f2937;
     color: #1f2937;
+    width: fit-content;
+
 }
 
 .outline:hover {

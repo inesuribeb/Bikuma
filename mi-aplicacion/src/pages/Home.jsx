@@ -10,7 +10,6 @@ import Logotipos from '../components/Logotipos/Logotipos'
 function Home () {
     return (
         <div>
-            <h1>Hello</h1>
             <Hero />
             <Cta />
             <Noticias />
