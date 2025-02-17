@@ -1,0 +1,16 @@
+.logotipos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F9FF;
+    height: 235px;
+}
+
+.logo-image {
+    /* Ajusta estos valores según necesites */
+    max-width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
