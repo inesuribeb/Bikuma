@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
   font-family: 'AtkinsonHyperlegible', sans-serif;
+  /* background-color: #F5F9FF; */
 }
 
 html, body {
   padding: 0px;
   margin: 0px;
+  width: 100%;
 }
