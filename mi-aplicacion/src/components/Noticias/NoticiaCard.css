@@ -53,6 +53,19 @@
     color: #041E49;
 }
 
+
+
+.location-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.location-title svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .noticiaCard-container {

@@ -1,0 +1,19 @@
+.proyectos-main-container {
+    background-color: #F5F9FF;
+    height: 801px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+   align-items: center; 
+}
+
+.all-projects-container {
+    display: flex;
+    overflow-x: scroll; /* Permite scroll horizontal */
+    /* Oculta la barra de scroll pero mantiene la funcionalidad */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    gap: 24px; /* Espacio entre tarjetas */
+    padding: 40px; 
+    scroll-behavior: smooth;
+}
