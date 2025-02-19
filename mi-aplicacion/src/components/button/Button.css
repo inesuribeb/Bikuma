@@ -6,7 +6,7 @@
     padding: 8px 12px;
     gap: 8px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: clamp(11px, 1.1vw, 18px);
     transition: all 0.2s ease;
     cursor: pointer;
     display: flex;

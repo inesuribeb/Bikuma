@@ -1,19 +1,3 @@
-/* .single-servicio-card {
-    width: clamp(250px, 18.23%, 262.5px);
-    aspect-ratio: 262.5 / 286.41;
-    border-radius: clamp(16px, 2.22vw, 32px);
-    padding: clamp(24px, 3.33%, 48px) clamp(16px, 1.67%, 24px);
-    gap: clamp(8px, 0.69vw, 10px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #FFFFFF;
-    color: #041E49;
-    transition: box-shadow 0.3s ease;
-    box-sizing: border-box;
-} */
-
 .single-servicio-card img,
 .single-servicio-card h2,
 .single-servicio-card p {
@@ -23,14 +7,14 @@
 
 .single-servicio-card h5 {
     font-weight: 700;
-    font-size: clamp(20px, 1.8vw, 25.92px);
-    line-height: clamp(22px, 1.98vw, 28.51px);
+    font-size: clamp(14px, 1.3vw, 26px);
+    line-height: clamp(22px, 1.78vw, 28.51px);
     margin: 0;
 }
 
 .single-servicio-card p {
     font-weight: 400;
-    font-size: clamp(16px, 1.25vw, 18px);
+    font-size: clamp(10px, 1.1vw, 18px);
     line-height: clamp(20px, 1.75vw, 25.2px);
     margin: 0;
 }
@@ -43,25 +27,30 @@
 }
 
 .single-servicio-card {
-    width: clamp(250px, 17.81%, 256.5px);
-    height: 286.41px;
+    width: clamp(240px, 22%, 256.5px);
+    aspect-ratio: 256.5 / 286.41;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
     background-color: #FFFFFF;
     border-radius: clamp(16px, 2.22vw, 32px);
     transition: box-shadow 0.3s ease;
     color: #041E49;
+
+    margin-bottom: clamp(10px, 2vw, 56px); /* Espacio entre filas */
+    /* margin-right: clamp(10px, 2vw, 56px); */
 }
 
 .card-info {
-    width: 208.5px; 
-    height: 161.41px;
+    /* width: 208.5px; 
+    height: 161.41px; */
+    width: clamp(180px, 22%, 208.5px); /* Ancho flexible, pero el máximo es 208.5px y mínimo es 120px */
+    aspect-ratio: 208.5 / 161.41; 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* gap: 18px; */
+    gap: 18px;
     justify-content: space-between; 
 }
 

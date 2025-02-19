@@ -39,7 +39,7 @@ function Noticias() {
                 <NoticiaCard
                     img="/images/noticias/noticias4.png"
                     title="Título de la noticia"
-                    newsDescription="Descripción de la noticia"
+                    newsDescription="¿Tienes cita en Fitur? La accesibilidad estará en tu agenda"
                 />
                 <NoticiaCard
                     img="/images/noticias/noticias5.png"

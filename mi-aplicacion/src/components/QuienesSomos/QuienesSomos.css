@@ -4,20 +4,36 @@
     align-items: center;
     gap: 2rem; /* Espacio entre columnas */
     background-color: #F5F9FF;
+    padding: clamp(12px, 1.2vw, 16px) clamp(60px, 10.7vw, 155px);
+    position: relative;
 }
 
-.first-column-hc {
-    flex: 1; /* Toma el espacio disponible */
+.first-column-qs {
+    flex: 1; 
+    position: relative; 
 }
 
-.second-column-hc {
+.second-column-qs {
     flex: 1;
+}
+
+.second-column-qs h1{
+    width: 65%;
+}
+
+.second-column-qs p{
+    width: 80%;
+    margin-bottom: 50px;
 }
 
 /* Para asegurar que la imagen se ajuste a su contenedor */
 .first-column-qs img {
-    width: 100%;
+     width: 110%;
     height: auto;
+    object-position: left bottom; 
+    position: absolute; 
+    left: -84px; /* Alinea la imagen a la izquierda */
+    top: -280px; /* Alinea la imagen a la parte inferior */
 }
 
 /* Para hacer responsive */

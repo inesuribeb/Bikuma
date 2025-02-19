@@ -1,17 +1,38 @@
 .hero-content {
     display: flex;
+    width: 100%; /* Asegura que ocupa todo el ancho */
+    max-width: 1440px; /* Si quieres limitarlo */
     justify-content: space-between;
     align-items: center;
     gap: 2rem; /* Espacio entre columnas */
     background-color: #F5F9FF;
+    /* padding: 0px clamp(60px, 10.7vw, 155px); */
+    padding: clamp(12px, 1.2vw, 16px) clamp(60px, 10.7vw, 155px);
+}
+
+.first-column-hc, .second-column-hc {
+    min-width: 0; /* Permite que flex reduzca el tamaño si es necesario */
 }
 
 .first-column-hc {
-    flex: 1; /* Toma el espacio disponible */
+    flex: 0.85;
+    /* flex-grow: 1; */
+}
+
+.first-column-hc h1 {
+    font-size: clamp(32px, 3.4vw, 53px);
+    color: #041E49;
+}
+
+.first-column-hc p {
+    font-size: clamp(16px, 1.3vw, 21px);
+    color: #041E49;
+    margin-bottom: 50px;
 }
 
 .second-column-hc {
-    flex: 1;
+    flex: 1.25;
+    /* flex-grow: 3; */
 }
 
 /* Para asegurar que la imagen se ajuste a su contenedor */

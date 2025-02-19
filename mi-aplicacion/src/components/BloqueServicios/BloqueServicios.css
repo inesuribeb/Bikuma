@@ -1,12 +1,10 @@
-/* .servicios-main-container h2 {
-    text-align: center;
-    margin-bottom: 56px;
-    color: #041E49;
-    font-weight: 700;
-    font-size: clamp(32px, 3.11vw, 44.79px);
-    line-height: clamp(36px, 3.42vw, 49.27px);
-    letter-spacing: 0;
-    text-align: center;
-    color: #041E49;
-    margin-bottom: 56px;
-} */
+.servicios-main-container {
+    background-color: #F5F9FF;
+    height: clamp(1000px, 55vw, 885px);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: clamp(12px, 1.2vw, 70px) clamp(60px, 10.7vw, 155px);
+
+}

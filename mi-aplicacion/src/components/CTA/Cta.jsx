@@ -3,7 +3,7 @@ import './Cta.css'
 
 function Cta() {
     return (
-        <div className='servicios-main-container'>
+        <div className='cta-main-container'>
             {/* <h2>Servicios</h2> */}
             <div className='servicios-container'>
                 <ServicioCard
