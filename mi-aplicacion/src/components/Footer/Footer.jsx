@@ -1,11 +1,12 @@
 import Button from "../button/Button";
 import FooterForm from "./FooterForm";
+import { ArrowRight } from "lucide-react";
 import './Footer.css'
 
 function Footer() {
     return (
         <section className="footerContent">
-            <div className="footerRow">
+            {/* <div className="footerRow"> */}
                 <div className="col1">
                     <div className="col1-footerLogo">
                         <img src="/images/puntodisFooter.png" alt="Puntodis Logo" />
@@ -19,7 +20,7 @@ function Footer() {
                             size="large"
                             onClick={() => console.log('Contactar')}
                         >
-                            Contactar
+                            Contactar <ArrowRight size={16} className="ml-2" />
                         </Button>
                     </div>
                     <div className="col1-logos">
@@ -44,7 +45,7 @@ function Footer() {
                         <FooterForm />
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </section>
     )
 }

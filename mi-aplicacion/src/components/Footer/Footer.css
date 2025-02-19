@@ -1,41 +1,28 @@
 .footerContent {
     width: 100%;
     min-height: fit-content;
-    padding: 79px 150px 32px 150px;
-    gap: 44px;
+    padding: clamp(30px, 3.5vw, 72px) clamp(60px, 10.7vw, 155px);
+    gap: 7rem;
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    box-sizing: border-box;
-    background-color: #2B5EC3;
+    flex-direction: row;
+    background-color: #005EB8;
     color: white;
+
 }
 
-.footerRow {
-    width: 100%;
-    max-width: 1133px;
-    min-height: fit-content;
+.col1, .col2 {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    gap: 85px;
 }
-
-
-
 
 .col1 {
-    width: 332px;
-    width: 200px;
-    min-height: fit-content;
-    display: flex;
     flex-direction: column;
-    gap: 48px;
+    flex: 0.6;
+    gap: clamp(8px, 2vw, 24px);
 }
 
+
 .col1-footerLogo {
-    width: 100%;
-    max-width: 223px;
+    width: 80%;
 }
 
 .col1-footerLogo img {
@@ -50,15 +37,18 @@
 }
 
 .col1-info p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
+    font-size: clamp(10px, 1.1vw, 18px);
+    line-height: clamp(15px, 2vw, 25px);
+}
+
+.col1-button button {
+    margin-bottom: clamp(8px, 2vw, 24px);
+
 }
 
 .col1-logos {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 80%;
+    filter: brightness(0) invert(1);
 }
 
 .col1-logos img {
@@ -69,16 +59,43 @@
 
 
 
-
 .col2 {
-    width: 716px;
-    width: 600px;
-    min-height: fit-content;
-    display: flex;
     flex-direction: row;
-    gap: 37px;
+    flex: 1.4;
+    display: flex;
+    gap: 3rem;
 }
 
+.col2-menu {
+    flex: 0.7;
+}
+.col2-form {
+    flex: 1.3;
+}
+
+.col2-menu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.col2-menu nav li {
+    color: white;
+    font-weight: 700;
+    font-size: clamp(11px, 1.1vw, 18px);
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.col2-menu nav li:hover {
+    opacity: 0.8;
+}
+
+/* 
 .col2-menu nav ul {
     list-style: none;
     margin: 0;
@@ -105,7 +122,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-}
+} */
 
 
 /* Media queries para diferentes tamaños de pantalla */
