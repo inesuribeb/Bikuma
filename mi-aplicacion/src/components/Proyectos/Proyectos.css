@@ -1,6 +1,6 @@
 .proyectos-main-container {
     background-color: #F5F9FF;
-    height: 801px;
+    height: clamp(500px, 50vw, 785px);
     display: flex;
     flex-direction: column; 
     justify-content: center;

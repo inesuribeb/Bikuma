@@ -1,11 +1,12 @@
 .logotipos-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
-    justify-content: center;
+    gap: 2rem;
+    justify-content: space-between;
     align-items: center;
-    background-color: #F5F9FF;
-    height: 235px;
+    background-color: white;
+    padding: clamp(12px, 1.2vw, 16px) clamp(60px, 10.7vw, 155px);
+    min-height: clamp(200px, 15vw, 300px);
 }
 
 .logo-image {

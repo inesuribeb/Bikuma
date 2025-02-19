@@ -1,10 +1,10 @@
 .servicios-main-container {
     background-color: #F5F9FF;
-    height: clamp(1000px, 55vw, 885px);
+    /* height: clamp(1000px, 55vw, 885px); */
     display: flex;
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     padding: clamp(12px, 1.2vw, 70px) clamp(60px, 10.7vw, 155px);
-
+    min-height: clamp(600px, 75vw, 885px);
 }

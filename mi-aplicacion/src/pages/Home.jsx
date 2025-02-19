@@ -6,6 +6,7 @@ import QuienesSomos from '../components/QuienesSomos/QuienesSomos'
 import Productos from '../components/Productos/Productos'
 import Proyectos from '../components/Proyectos/Proyectos'
 import Logotipos from '../components/Logotipos/Logotipos'
+import './Home.css'
 
 function Home () {
     return (

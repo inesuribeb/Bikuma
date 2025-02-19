@@ -37,7 +37,7 @@
     transition: box-shadow 0.3s ease;
     color: #041E49;
 
-    margin-bottom: clamp(10px, 2vw, 56px); /* Espacio entre filas */
+    /* margin-bottom: clamp(10px, 2vw, 56px);  */
     /* margin-right: clamp(10px, 2vw, 56px); */
 }
 

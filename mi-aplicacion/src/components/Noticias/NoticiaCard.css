@@ -56,11 +56,12 @@
     font-weight: 700;
     margin: 0;
     color: #041E49;
+    margin-bottom: 5px;
 }
 
 
 
-.location-title {
+/* .location-title {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -69,6 +70,29 @@
 .location-title svg {
     width: 20px;
     height: 20px;
+    color: #005EB8;
+} */
+
+.location-title {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    white-space: nowrap; /* Evita que el texto se parta en múltiples líneas */
+}
+
+.location-title h5 {
+    margin: 0; /* Elimina márgenes que podrían causar saltos de línea */
+    display: inline-flex; /* Mantiene el texto en línea */
+    white-space: nowrap; /* Asegura que el texto no se divida */
+    padding: 0;
+}
+
+.location-title svg {
+    width: 16px;
+    height: 16px;
+    color: #005EB8;
+    flex-shrink: 0; /* Evita que el icono se encoja */
 }
 
 /* Responsive */

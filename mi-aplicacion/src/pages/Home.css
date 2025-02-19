@@ -1,0 +1,6 @@
+.home-content {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center; /* Opcional: centra los elementos horizontalmente */
+    width: 100%;
+}
