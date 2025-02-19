@@ -16,6 +16,7 @@ function Footer() {
                     <div className="col1-button">
                         <Button
                             variant="solid"
+                            size="large"
                             onClick={() => console.log('Contactar')}
                         >
                             Contactar

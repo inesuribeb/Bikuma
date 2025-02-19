@@ -1,5 +1,5 @@
 .cta-main-container {
-    padding: clamp(12px, 1.2vw, 70px) clamp(60px, 10.7vw, 155px);
+    padding: clamp(30px, 3.5vw, 72px) clamp(60px, 10.7vw, 155px);
     background-color: #F5F9FF;
 
 }

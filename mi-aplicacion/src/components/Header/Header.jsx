@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className="headerContent">
             <div className="headerLogo">
-                <img src="/images/headerLogo.png" alt="Puntodis Logo" />
+                <img src="/images/puntoDisHeader.png" alt="Puntodis Logo" />
             </div>
             <nav className="headerUl">
                 <ul>
@@ -21,6 +21,7 @@ function Header() {
                 <div>
                     <Button
                         variant="solid"
+                        size='default'
                         onClick={() => console.log('Contactar')}
                     >
                         Contactar
@@ -28,6 +29,7 @@ function Header() {
 
                     <Button
                         variant="outline"
+                        size='default'
                         onClick={() => console.log('Tienda')}
                         icon={<ShoppingCart size={20} />}
                     >

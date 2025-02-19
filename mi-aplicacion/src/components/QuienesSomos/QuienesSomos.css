@@ -8,33 +8,73 @@
     position: relative;
 }
 
+.blue-background-wrapper {
+    position: relative;
+    background-color: #2667B0;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2rem;  */
+    border-radius: 24px;
+}
+
+.first-column-qs,
+.second-column-qs { 
+    z-index: 1;
+    /* background-color: #2667B0; */
+}
+
 .first-column-qs {
     flex: 1; 
     position: relative; 
+    
+    background-color: #2667B0; /* Confirma que este color está aplicado */
+    /* border-radius: 24px 0 0 24px; */
+    /* justify-content: center;
+    align-items: center; */
+    padding: 20px; /* Añade algo de padding */
+    align-self: flex-end; /* Alinea la columna al final */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.first-column-qs img {
+    width: 121%;
+   height: auto;
+   /* object-position: left bottom;  */
+   position: absolute; 
+   /* left: -84px; 
+   top: -280px; */
+   bottom: 0;
+   right: 0;
 }
 
 .second-column-qs {
     flex: 1;
+    border-radius: 0 24px 24px 0;
 }
 
 .second-column-qs h1{
     width: 65%;
+    color: white;
+    margin-top: 40px;
+    line-height: clamp(20px, 3vw, 41px);
+
 }
 
 .second-column-qs p{
-    width: 80%;
-    margin-bottom: 50px;
+    width: 85%;
+    margin-bottom: 30px;
+    color: white;
+    line-height: clamp(15px, 2vw, 25px);
 }
 
-/* Para asegurar que la imagen se ajuste a su contenedor */
-.first-column-qs img {
-     width: 110%;
-    height: auto;
-    object-position: left bottom; 
-    position: absolute; 
-    left: -84px; /* Alinea la imagen a la izquierda */
-    top: -280px; /* Alinea la imagen a la parte inferior */
+.second-column-qs button {
+    margin-bottom: 40px;
 }
+
 
 /* Para hacer responsive */
 @media (max-width: 768px) {

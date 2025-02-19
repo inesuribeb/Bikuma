@@ -1,4 +1,5 @@
 import Button from "../button/Button";
+import { ArrowRight } from "lucide-react";
 import './Hero.css'
 
 function Hero() {
@@ -9,13 +10,15 @@ function Hero() {
                 <p>Actualiza tu proyecto con accesibilidad en la información y lleva tu mensaje a todas las personas</p>
                 <Button
                     variant="solid"
+                    size="large"
                     onClick={() => console.log('Contactar')}
                 >
-                    Contacta con nosotros
+                    Contacta con nosotros <ArrowRight size={16} className="ml-2" />
                 </Button>
             </div>
+            <div className="blue-background-overlay"></div>
             <div className="second-column-hc">
-                <img src="/images/Ilustracion.png" alt="" />
+                <img src="/images/Ilustracion3.png" alt="" />
             </div>
         </div>
     )

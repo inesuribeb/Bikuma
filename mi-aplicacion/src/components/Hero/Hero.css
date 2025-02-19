@@ -8,37 +8,74 @@
     background-color: #F5F9FF;
     /* padding: 0px clamp(60px, 10.7vw, 155px); */
     padding: clamp(12px, 1.2vw, 16px) clamp(60px, 10.7vw, 155px);
+    position: relative; 
+}
+
+.blue-background-overlay {
+    position: absolute;
+    background-color: #2667B0;
+    top: clamp(20px, 4vw, 46px);
+    bottom: 0;
+    bottom: clamp(12px, 1.2vw, 16px);
+    right: 0;
+    /* right: -130px;  */
+    width: 45%; /* Ajusta este valor para controlar dónde comienza el azul */
+    z-index: 0; /* Debajo del contenido */
+    border-radius: 24px 0 0 24px;    
+
 }
 
 .first-column-hc, .second-column-hc {
     min-width: 0; /* Permite que flex reduzca el tamaño si es necesario */
+    position: relative; /* Para estar por encima del fondo */
+    z-index: 1;
 }
 
 .first-column-hc {
-    flex: 0.85;
+    flex: 0.75;
     /* flex-grow: 1; */
 }
 
 .first-column-hc h1 {
-    font-size: clamp(32px, 3.4vw, 53px);
+    font-size: clamp(32px, 3.2vw, 53px);
     color: #041E49;
+    line-height: clamp(1.2em, 4vw, 59px);
+
 }
 
 .first-column-hc p {
+    width: 90%;
     font-size: clamp(16px, 1.3vw, 21px);
     color: #041E49;
+    margin-bottom: 50px;
+    line-height: clamp(20px, 3vw, 30px);
+}
+.first-column-hc button {
     margin-bottom: 50px;
 }
 
 .second-column-hc {
     flex: 1.25;
     /* flex-grow: 3; */
+    position: relative;
+    z-index: 1;
+    align-self: flex-end; /* Alinea la columna al final */
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido al final */
+    overflow: visible;
 }
 
 /* Para asegurar que la imagen se ajuste a su contenedor */
 .second-column-hc img {
-    width: 100%;
+    /* width: 100%;
+    height: auto; */
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 105%; /* Puedes aumentar este valor, por ejemplo 120% */
     height: auto;
+    transform-origin: bottom left;
 }
 
 /* Para hacer responsive */

@@ -3,7 +3,7 @@
     height: 34px;
     border-radius: 33px;
     border-width: 1px;
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
     gap: 8px;
     font-weight: 700;
     font-size: clamp(11px, 1.1vw, 18px);
@@ -19,6 +19,21 @@
     align-items: center;
     gap: 8px;
 }
+
+.default {
+    padding: 8px 12px;
+    font-size: clamp(10px, 1vw, 15px);
+  }
+  
+  .large {
+    padding: 22px 16px;
+    font-size: clamp(12px, 1.1vw, 28px);
+  }
+  
+  .small {
+    padding: 6px 10px;
+    font-size: clamp(10px, 1vw, 16px);
+  }
 
 /* Variante sólida (como el botón de Contactar) */
 .solid {
