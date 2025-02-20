@@ -18,8 +18,6 @@ La prueba consistió en implementar el diseño de una página web basado en el p
   - **Sass Variables** para la personalización del diseño.
   - **Media Queries** para adaptabilidad a dispositivos móviles.
 
-### Estructura del Proyecto
-
 
 ## Proceso de Desarrollo
 
@@ -52,19 +50,21 @@ La prueba consistió en implementar el diseño de una página web basado en el p
 
 1. Clona este repositorio en tu máquina local:
 
-git clone git@github.com:inesuribeb/Bikuma.git
+   git clone git@github.com:inesuribeb/Bikuma.git
 
 2. Navega hasta la carpeta del proyecto:
 
-cd mi-aplicacion
+   cd mi-aplicacion
 
-3. Instala dependencias
+3. Instala dependencias:
 
-npm install
+   npm install
 
-4. Abre el archivo `index.html` en tu navegador para ver la página.
+4. Inicia el servidor de desarrollo:
 
-npm run dev
+   npm run dev
+
+5. Abre el archivo `index.html` en tu navegador para ver la página.
 
 ## Consideraciones
 
@@ -76,6 +76,15 @@ npm run dev
 - **Accesibilidad**: Mejorar el contraste de colores y la legibilidad en diferentes dispositivos.
 - **Optimización adicional**: Uso de imágenes en formato WebP para una mejor compresión sin pérdida de calidad.
 - **Interactividad avanzada**: Agregar funcionalidades interactivas como un carrusel de imágenes o un formulario de contacto.
+
+## Mejoras Futuras
+
+- **Sass**: Aunque he implementado el proyecto utilizando CSS convencional, me gustaría profundizar en el uso de **Sass** para mejorar la modularidad y organización de los estilos. Aprender a trabajar con Sass me permitirá aprovechar sus características avanzadas, como la anidación, los mixins y las variables, lo que podría optimizar aún más el código y facilitar la personalización y mantenimiento del proyecto a largo plazo.
+
+- **Pulir detalles y efectos**: Dado que este proyecto ha sido desarrollado en una semana, me gustaría pulir algunos detalles visuales y perfeccionar los efectos y transiciones de los elementos interactivos para una experiencia de usuario más fluida y dinámica.
+
+- **Optimización adicional**: Uso de imágenes en formato WebP para una mejor compresión sin pérdida de calidad.
+
 
 ## Contribuciones
 
