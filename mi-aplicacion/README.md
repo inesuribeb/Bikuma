@@ -72,10 +72,6 @@ La prueba consistió en implementar el diseño de una página web basado en el p
 - Se ha hecho todo lo posible para garantizar la **compatibilidad entre navegadores** y una **buena experiencia de usuario** en dispositivos móviles y de escritorio.
 - La estructura del código está diseñada para ser **escalable** y fácil de mantener.
 
-## Mejoras Futuras
-- **Accesibilidad**: Mejorar el contraste de colores y la legibilidad en diferentes dispositivos.
-- **Optimización adicional**: Uso de imágenes en formato WebP para una mejor compresión sin pérdida de calidad.
-- **Interactividad avanzada**: Agregar funcionalidades interactivas como un carrusel de imágenes o un formulario de contacto.
 
 ## Mejoras Futuras
 
