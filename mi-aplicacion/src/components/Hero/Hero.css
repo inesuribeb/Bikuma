@@ -81,6 +81,43 @@
 /* Para hacer responsive */
 @media (max-width: 768px) {
     .hero-content {
-        flex-direction: column;
+        flex-direction: column-reverse; /* Imagen arriba, texto abajo */
+        align-items: center;
+        gap: 1.5rem;
+        padding: clamp(16px, 4vw, 24px); /* Reduce padding en móvil */
+        text-align: center; /* Centra el texto */
+    }
+
+    .blue-background-overlay {
+        width: 80%; /* Que ocupe todo el ancho */
+        height: 50%; /* Ajustar la altura */
+        border-radius: 0 24px 24px 0px; /* Bordes redondeados abajo */
+        top: auto;
+        bottom: clamp(16px, 4vw, 24px);
+        left: 0;
+    }
+
+    .first-column-hc {
+        flex: none;
+        width: 100%;
+    }
+
+    .first-column-hc p {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .second-column-hc {
+        flex: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .second-column-hc img {
+        position: relative;
+        width: 80%; /* Ajusta el tamaño */
+        max-width: 320px; /* No crezca demasiado */
+        height: auto;
     }
 }
