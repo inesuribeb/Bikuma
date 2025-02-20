@@ -11,11 +11,9 @@ La prueba consistió en implementar el diseño de una página web basado en el p
 - **React**: Estructura semántica de la página.
 - **HTML5**: Estructura semántica de la página.
 - **CSS3**: Estilización con propiedades modernas y responsivas.
-- **SASS**: Preprocesador CSS para mejor organización y modularidad.
 - **JavaScript**: Para la interactividad y funcionalidad.
 - **Frameworks/Librerías**:
   - **Flexbox** y **Grid** para layout y distribución.
-  - **Sass Variables** para la personalización del diseño.
   - **Media Queries** para adaptabilidad a dispositivos móviles.
 
 
@@ -42,7 +40,7 @@ La prueba consistió en implementar el diseño de una página web basado en el p
 - La estructura de la página es completamente **responsive**, adaptándose perfectamente a diferentes tamaños de pantalla, desde dispositivos móviles hasta pantallas de escritorio grandes.
 
 ### 5. Uso de Herramientas y Tecnologías
-- La aplicación fue construida utilizando tecnologías modernas como **Sass** para la gestión de estilos y variables.
+- La aplicación fue construida utilizando tecnologías modernas como **React** para la gestión de estilos y variables.
 - El diseño se implementó usando técnicas modernas de CSS, como **Flexbox** y **CSS Grid**, para garantizar una distribución adecuada en todos los tamaños de pantalla.
 - Se usaron **media queries** para asegurar que la página fuera completamente **responsive**.
 
