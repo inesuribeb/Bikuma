@@ -8,20 +8,16 @@ import "./Root.css";
 function Root() {
 
     const [isMobileView, setIsMobileView] = useState(false);
-    
+
     useEffect(() => {
-        // Función para verificar el ancho de la pantalla
         const checkScreenSize = () => {
-            setIsMobileView(window.innerWidth <= 1024); // Ajusta este valor según necesites
+            setIsMobileView(window.innerWidth <= 1024);
         };
-        
-        // Comprobar al cargar
+
         checkScreenSize();
-        
-        // Agregar event listener para redimensión
+
         window.addEventListener('resize', checkScreenSize);
-        
-        // Limpiar event listener
+
         return () => {
             window.removeEventListener('resize', checkScreenSize);
         };
@@ -29,10 +25,9 @@ function Root() {
 
     return (
         <>
-        {/* <Header /> */}
-        {isMobileView ? <HamburguerHeader /> : <Header />}
-        <Outlet  />
-        <Footer />
+            {isMobileView ? <HamburguerHeader /> : <Header />}
+            <Outlet />
+            <Footer />
         </>
     );
 }

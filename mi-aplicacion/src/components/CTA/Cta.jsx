@@ -4,7 +4,6 @@ import './Cta.css'
 function Cta() {
     return (
         <div className='cta-main-container'>
-            {/* <h2>Servicios</h2> */}
             <div className='servicios-container'>
                 <ServicioCard
                     braileLogo="/images/Braile.png"
@@ -26,21 +25,6 @@ function Cta() {
                     title="Digitalización accesible"
                     description="Donec et nibh facilisis, lobortis lacus non, viverra ante integer"
                 />
-                {/* <ServicioCard
-                    braileLogo="/images/Braile5.png"
-                    title="Formación e inclusión"
-                    description="Nullam facilisis ligula et enim ultrices sagittis Aenean at felis eget"
-                />
-                <ServicioCard
-                    braileLogo="/images/Braile6.png"
-                    title="Restauración inclusiva"
-                    description="Donec et nibh facilisis, lobortis lacus non, viverra ante integer"
-                />
-                <ServicioCard
-                    braileLogo="/images/Braile7.png"
-                    title="Simulación de entornos 3D"
-                    description="Donec et nibh facilisis, lobortis lacus non, viverra ante integer "
-                /> */}
             </div>
         </div>
     )

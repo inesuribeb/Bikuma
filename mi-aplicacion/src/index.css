@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: 'AtkinsonHyperlegible', sans-serif;
-  /* background-color: #F5F9FF; */
 }
 
 html, body {
@@ -9,4 +8,5 @@ html, body {
   margin: 0px;
   width: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
 }

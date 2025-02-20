@@ -10,20 +10,13 @@
 .servicios-container {
     display: flex;
     flex-wrap: wrap;
-    /* gap: clamp(10px, 2vw, 56px); */
     justify-content: center;
     gap: clamp(10px, 2vw, 56px);
     align-items: center;
-    /* height: 100%; */
 }
 
-/* Media queries para responsividad */
 @media (max-width: 768px) {
-    .servicios-main-container {
-        padding: 5%;
-    }
-
-    .servicios-container {
-        gap: 30px;
+    .cta-main-container {
+        padding: 12px 0px;
     }
 }

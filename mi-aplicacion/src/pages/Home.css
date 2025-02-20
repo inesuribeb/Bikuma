@@ -1,24 +1,24 @@
 .home-content {
-    display: flex;
-    flex-direction: column; /* Apila los elementos en columna */
-    width: 100%;
-    background-color: #F5F9FF;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #F5F9FF;
+  padding-top: 90px;
 }
 
 .fade-in-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    will-change: opacity, transform;
-  }
-  
-  .fade-in-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .home-content > .fade-in-section:first-child {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-content>.fade-in-section:first-child {
+  opacity: 1;
+  transform: translateY(0);
+}

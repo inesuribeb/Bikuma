@@ -9,31 +9,14 @@ import Proyectos from '../components/Proyectos/Proyectos'
 import Logotipos from '../components/Logotipos/Logotipos'
 import './Home.css'
 
-// function Home () {
-//     return (
-//         <div className='home-content'>
-//             <Hero />
-//             <Cta />
-//             <Noticias />
-//             <BloqueServicios />
-//             <QuienesSomos />
-//             <Productos />
-//             <Proyectos />
-//             <Logotipos />
-//         </div>
-//     )
-// }
-
-// export default Home;
-
 function Home() {
     const sectionRefs = useRef([]);
   
     useEffect(() => {
       const observerOptions = {
-        root: null, // Viewport
+        root: null, 
         rootMargin: '0px',
-        threshold: 0.3 // Se dispara cuando al menos 10% del elemento es visible
+        threshold: 0.3 
       };
   
       const observer = new IntersectionObserver((entries) => {

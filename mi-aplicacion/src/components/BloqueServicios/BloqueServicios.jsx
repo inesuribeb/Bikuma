@@ -2,7 +2,7 @@ import ServicioCard from "../CTA/ServicioCard";
 import Subtitulo from "../subtitulos/Subtitulo";
 import './BloqueServicios.css'
 
-function BloqueServicios () {
+function BloqueServicios() {
     return (
         <div className='servicios-main-container'>
             <Subtitulo subtitulo="Servicios" />
@@ -27,9 +27,6 @@ function BloqueServicios () {
                     title="Evacuación y emergencia"
                     description="Donec et nibh facilisis, lobortis lacus non, viverra ante integer"
                 />
-
-
-
                 <ServicioCard
                     braileLogo="/images/Braile5.png"
                     title="Formación e inclusión"

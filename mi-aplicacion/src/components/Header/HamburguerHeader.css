@@ -3,6 +3,9 @@
     background-color: #F5F9FF;
     padding: 12px 20px;
     box-sizing: border-box;
+    position: fixed;
+    top:0;
+    z-index: 1000;
 }
 
 .mobileHeaderTop {
@@ -33,20 +36,13 @@
     color: #D50032;
 }
 
-/* .mobileMenu {
-    margin-top: 16px;
-    overflow: hidden;
-    animation: slideDown 0.3s ease;
-} */
-
 .mobileMenu {
     position: absolute;
-    top: 65px; /* Ajusta según la altura de tu header */
+    top: 65px; 
     left: 0;
     right: 0;
     background-color: #F5F9FF;
     z-index: 1000;
-    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
     padding: 16px;
     overflow: hidden;
     animation: fadeIn 0.3s ease;
@@ -113,7 +109,6 @@
     flex: 0.5;
 }
 
-/* Media query para mostrar/ocultar los headers según el tamaño de pantalla */
 @media (max-width: 768px) {
     .headerContent {
         display: none;
@@ -128,12 +123,3 @@
         height: 100%;
     }
 }
-
-/* @media (min-width: 769px) {
-    .mobileHeader {
-        display: none;
-    }
-    .headerContent {
-        display: flex;
-    }
-} */

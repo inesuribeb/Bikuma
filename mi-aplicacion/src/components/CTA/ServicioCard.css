@@ -1,9 +1,20 @@
+.single-servicio-card {
+    width: clamp(240px, 22%, 256.5px);
+    aspect-ratio: 256.5 / 286.41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: clamp(16px, 2.22vw, 32px);
+    transition: box-shadow 0.3s ease;
+    color: #041E49;
+}
+
 .single-servicio-card img,
 .single-servicio-card h2,
 .single-servicio-card p {
     max-width: 100%;
 }
-
 
 .single-servicio-card h5 {
     font-weight: 700;
@@ -19,42 +30,48 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .single-servicio-card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-.single-servicio-card {
-    width: clamp(240px, 22%, 256.5px);
-    aspect-ratio: 256.5 / 286.41;
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    background-color: #FFFFFF;
-    border-radius: clamp(16px, 2.22vw, 32px);
-    transition: box-shadow 0.3s ease;
-    color: #041E49;
-
-    /* margin-bottom: clamp(10px, 2vw, 56px);  */
-    /* margin-right: clamp(10px, 2vw, 56px); */
-}
-
 .card-info {
-    /* width: 208.5px; 
-    height: 161.41px; */
-    width: clamp(180px, 22%, 208.5px); /* Ancho flexible, pero el máximo es 208.5px y mínimo es 120px */
-    aspect-ratio: 208.5 / 161.41; 
+    width: clamp(180px, 22%, 208.5px);
+    aspect-ratio: 208.5 / 161.41;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 18px;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .single-servicio-card:hover {
     box-shadow: 6px 6px 0px #041E49;
+}
 
+@media (max-width: 768px) {
+    .servicios-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        justify-items: center;
+    }
+
+    .single-servicio-card {
+        width: 45%;
+        max-width: 180px;
+        aspect-ratio: 256.5 / 286.41;
+        padding: 16px;
+        align-items: stretch;
+        min-height: 200px;
+    }
+
+    .card-info {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .single-servicio-card h5 {
+        font-size: clamp(14px, 3.5vw, 20px);
+    }
+
+    .single-servicio-card p {
+        font-size: clamp(10px, 3vw, 16px);
+    }
 }

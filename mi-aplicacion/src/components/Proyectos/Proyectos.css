@@ -9,11 +9,20 @@
 
 .all-projects-container {
     display: flex;
-    overflow-x: scroll; /* Permite scroll horizontal */
-    /* Oculta la barra de scroll pero mantiene la funcionalidad */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
-    gap: 24px; /* Espacio entre tarjetas */
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 24px;
     padding: 40px; 
     scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .proyectos-main-container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        justify-content: flex-start; 
+        align-items: center;
+    }
 }

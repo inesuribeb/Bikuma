@@ -11,8 +11,20 @@
 }
 
 .logo-image {
-    /* Ajusta estos valores según necesites */
     max-width: 80px;
     height: 80px;
     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .logotipos-container {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: clamp(12px, 1.2vw, 16px) 0;
+    }
+
+    .logo-image {
+        max-width: 60px;
+        height: 60px;
+    }
 }

@@ -1,13 +1,12 @@
 .noticiaCard-container {
     position: relative;
-    width: clamp(220px, 23.125%, 333px); /* 333/1440 * 100 */
-    aspect-ratio: 333/365; /* Mantiene la proporción de la imagen */
-    border-radius: 24px; /* Bordes redondeados como en la imagen */
-    overflow: hidden; /* Para que la imagen no sobresalga de los bordes redondeados */
+    width: clamp(220px, 23.125%, 333px);
+    aspect-ratio: 333/365;
+    border-radius: 24px;
+    overflow: hidden;
     transition: transform 0.3s ease;
     flex-shrink: 0;
-    transform-origin: center; 
-
+    transform-origin: center;
     margin: 24px;
     transition: transform 0.3s ease, margin 0.3s ease;
 }
@@ -16,14 +15,13 @@
     transform: scale(1.2);
     cursor: pointer;
     z-index: 1;
-
     margin: 24px;
 }
 
 .noticiaCard-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .noticiaCard-container img:hover {
@@ -45,7 +43,6 @@
 .noticiaCard-info h5 {
     font-size: clamp(8px, 0.8vw, 18px);
     font-weight: 700;
-    /* margin-bottom: 0.5rem; */
     margin: 0;
     padding-bottom: 0.3rem;
     color: #005EB8;
@@ -59,32 +56,18 @@
     margin-bottom: 5px;
 }
 
-
-
-/* .location-title {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.location-title svg {
-    width: 20px;
-    height: 20px;
-    color: #005EB8;
-} */
-
 .location-title {
     display: flex;
     align-items: flex-end;
     gap: 6px;
-    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
-    white-space: nowrap; /* Evita que el texto se parta en múltiples líneas */
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .location-title h5 {
-    margin: 0; /* Elimina márgenes que podrían causar saltos de línea */
-    display: inline-flex; /* Mantiene el texto en línea */
-    white-space: nowrap; /* Asegura que el texto no se divida */
+    margin: 0;
+    display: inline-flex;
+    white-space: nowrap;
     padding: 0;
 }
 
@@ -92,14 +75,26 @@
     width: 16px;
     height: 16px;
     color: #005EB8;
-    flex-shrink: 0; /* Evita que el icono se encoja */
+    flex-shrink: 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .noticiaCard-container {
-        width: 100%;
+        width: 80%;
+        height: 100%;
         max-width: 333px;
         margin: 0 auto;
+        transform: none !important;
+    }
+
+    .noticiaCard-container:hover {
+        transform: none;
+        cursor: default;
+        z-index: auto;
+        margin: 0 auto;
+    }
+
+    .noticiaCard-container img:hover {
+        filter: none;
     }
 }

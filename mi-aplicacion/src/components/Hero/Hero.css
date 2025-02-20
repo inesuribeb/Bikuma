@@ -1,12 +1,10 @@
 .hero-content {
     display: flex;
-    width: 100%; /* Asegura que ocupa todo el ancho */
-    max-width: 1440px; /* Si quieres limitarlo */
+    width: 100%; 
     justify-content: space-between;
     align-items: center;
-    gap: 2rem; /* Espacio entre columnas */
+    gap: 2rem; 
     background-color: #F5F9FF;
-    /* padding: 0px clamp(60px, 10.7vw, 155px); */
     padding: clamp(12px, 1.2vw, 16px) clamp(60px, 10.7vw, 155px);
     position: relative; 
 }
@@ -18,29 +16,25 @@
     bottom: 0;
     bottom: clamp(12px, 1.2vw, 16px);
     right: 0;
-    /* right: -130px;  */
-    width: 45%; /* Ajusta este valor para controlar dónde comienza el azul */
-    z-index: 0; /* Debajo del contenido */
+    width: 45%;
+    z-index: 0;
     border-radius: 24px 0 0 24px;    
-
 }
 
 .first-column-hc, .second-column-hc {
-    min-width: 0; /* Permite que flex reduzca el tamaño si es necesario */
-    position: relative; /* Para estar por encima del fondo */
+    min-width: 0;
+    position: relative;
     z-index: 1;
 }
 
 .first-column-hc {
     flex: 0.75;
-    /* flex-grow: 1; */
 }
 
 .first-column-hc h1 {
     font-size: clamp(32px, 3.2vw, 53px);
     color: #041E49;
     line-height: clamp(1.2em, 4vw, 59px);
-
 }
 
 .first-column-hc p {
@@ -50,48 +44,44 @@
     margin-bottom: 50px;
     line-height: clamp(20px, 3vw, 30px);
 }
+
 .first-column-hc button {
     margin-bottom: 50px;
 }
 
 .second-column-hc {
     flex: 1.25;
-    /* flex-grow: 3; */
     position: relative;
     z-index: 1;
-    align-self: flex-end; /* Alinea la columna al final */
+    align-self: flex-end;
     display: flex;
-    justify-content: flex-end; /* Alinea el contenido al final */
+    justify-content: flex-end;
     overflow: visible;
 }
 
-/* Para asegurar que la imagen se ajuste a su contenedor */
 .second-column-hc img {
-    /* width: 100%;
-    height: auto; */
-
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 105%; /* Puedes aumentar este valor, por ejemplo 120% */
+    width: 105%;
     height: auto;
     transform-origin: bottom left;
 }
 
-/* Para hacer responsive */
 @media (max-width: 768px) {
     .hero-content {
-        flex-direction: column-reverse; /* Imagen arriba, texto abajo */
+        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         gap: 1.5rem;
-        padding: clamp(16px, 4vw, 24px); /* Reduce padding en móvil */
-        text-align: center; /* Centra el texto */
+        padding: clamp(16px, 4vw, 24px);
+        text-align: center; 
     }
 
     .blue-background-overlay {
-        width: 80%; /* Que ocupe todo el ancho */
-        height: 50%; /* Ajustar la altura */
-        border-radius: 0 24px 24px 0px; /* Bordes redondeados abajo */
+        width: 80%; 
+        height: 50%;
+        border-radius: 0 24px 24px 0px;
         top: auto;
         bottom: clamp(16px, 4vw, 24px);
         left: 0;
@@ -116,8 +106,8 @@
 
     .second-column-hc img {
         position: relative;
-        width: 80%; /* Ajusta el tamaño */
-        max-width: 320px; /* No crezca demasiado */
+        width: 120%;
+        max-width: 320px;
         height: auto;
     }
 }
