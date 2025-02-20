@@ -47,15 +47,17 @@
 }
 
 .second-column-qs h1{
-    width: 65%;
+    width: 70%;
     color: white;
+    font-size: clamp(18px, 3vw, 30px);
     margin-top: 40px;
-    line-height: clamp(20px, 3vw, 41px);
+    line-height: clamp(18px, 3vw, 41px);
 }
 
 .second-column-qs p{
     width: 85%;
     margin-bottom: 30px;
+    font-size: clamp(10px, 1.5vw, 18px);
     color: white;
     line-height: clamp(15px, 2vw, 25px);
 }
@@ -115,7 +117,7 @@
 
     .second-column-qs h1 {
         width: 100%;
-        font-size: clamp(20px, 4vw, 30px);
+        font-size: clamp(18px, 4vw, 30px);
         margin-top: 20px;
         margin-bottom: 40px;
     }

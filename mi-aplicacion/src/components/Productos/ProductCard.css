@@ -11,6 +11,7 @@
 .image-container {
     width: clamp(200px, 18.26%, 263px);
     height: auto;
+    min-height: 176px;
     aspect-ratio: 263/ 297; 
     display: flex;
     justify-content: center;
@@ -33,11 +34,14 @@
     margin: 0;
     color: #041E49;
     width: 100%;
-    padding: 0;
+    padding: 1rem;
     height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
+    font-size: clamp(14px, 1.3vw, 26px);
+    line-height: clamp(22px, 1.78vw, 28.51px);
 }
 
 @media (max-width: 768px) {
