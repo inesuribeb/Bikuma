@@ -1,12 +1,37 @@
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .hero-content {
     display: flex;
-    width: 100%; 
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem; 
+    gap: 2rem;
     background-color: var(--background-color);
     padding: clamp(12px, 1.2vw, 16px) clamp(60px, 10.7vw, 155px);
-    position: relative; 
+    position: relative;
+    overflow: hidden;
 }
 
 .blue-background-overlay {
@@ -18,10 +43,14 @@
     right: 0;
     width: 45%;
     z-index: 0;
-    border-radius: 24px 0 0 24px;    
+    border-radius: 24px 0 0 24px;
+    opacity: 0;
+    animation: slideInRight 0.8s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
-.first-column-hc, .second-column-hc {
+.first-column-hc,
+.second-column-hc {
     min-width: 0;
     position: relative;
     z-index: 1;
@@ -29,6 +58,7 @@
 
 .first-column-hc {
     flex: 0.75;
+    animation: slideInLeft 0.8s ease-out forwards;
 }
 
 .first-column-hc h1 {
@@ -57,6 +87,7 @@
     display: flex;
     justify-content: flex-end;
     overflow: visible;
+    animation: slideInRight 0.8s ease-out forwards;
 }
 
 .second-column-hc img {
@@ -75,11 +106,11 @@
         align-items: center;
         gap: 1.5rem;
         padding: clamp(16px, 4vw, 24px);
-        text-align: center; 
+        text-align: center;
     }
 
     .blue-background-overlay {
-        width: 80%; 
+        width: 80%;
         height: 50%;
         border-radius: 0 24px 24px 0px;
         top: auto;

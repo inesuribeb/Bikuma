@@ -1,3 +1,57 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-section:not(.visible) .blue-background-wrapper,
+.fade-in-section:not(.visible) .first-column-qs,
+.fade-in-section:not(.visible) .second-column-qs {
+    animation: none;
+    opacity: 0;
+}
+
+.fade-in-section.visible .blue-background-wrapper {
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.fade-in-section.visible .first-column-qs {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.fade-in-section.visible .second-column-qs {
+    animation: slideInRight 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
 .quienes-somos-content {
     display: flex;
     justify-content: space-between;
@@ -19,15 +73,15 @@
 }
 
 .first-column-qs,
-.second-column-qs { 
+.second-column-qs {
     z-index: 1;
 }
 
 .first-column-qs {
-    flex: 1; 
-    position: relative; 
+    flex: 1;
+    position: relative;
     background-color: var(--secondary-color);
-    padding: 20px; 
+    padding: 20px;
     align-self: flex-end;
     display: flex;
     justify-content: flex-end;
@@ -36,7 +90,7 @@
 .first-column-qs img {
     width: 121%;
     height: auto;
-    position: absolute; 
+    position: absolute;
     bottom: 0;
     right: 0;
 }
@@ -46,7 +100,7 @@
     border-radius: 0 24px 24px 0;
 }
 
-.second-column-qs h1{
+.second-column-qs h1 {
     width: 70%;
     color: var(--basic-color);
     font-size: clamp(18px, 3vw, 30px);
@@ -54,7 +108,7 @@
     line-height: clamp(18px, 3vw, 41px);
 }
 
-.second-column-qs p{
+.second-column-qs p {
     width: 85%;
     margin-bottom: 30px;
     font-size: clamp(10px, 1.5vw, 18px);
@@ -106,7 +160,7 @@
 
     .second-column-qs {
         flex: 1;
-        display: flex; 
+        display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;

@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import './QuienesSomos.css'
 
 function QuienesSomos() {
+
     return (
         <div className="quienes-somos-content">
             <div className="blue-background-wrapper">
