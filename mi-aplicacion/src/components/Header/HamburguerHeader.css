@@ -1,6 +1,6 @@
 .mobileHeader {
     width: 100%;
-    background-color: #F5F9FF;
+    background-color: var(--background-color);
     padding: 12px 20px;
     box-sizing: border-box;
     position: fixed;
@@ -27,13 +27,13 @@
 .hamburgerButton {
     background: none;
     border: none;
-    color: #041E49;
+    color: var(--primary-color);
     cursor: pointer;
     padding: 8px;
 }
 
 .hamburgerButton:hover {
-    color: #D50032;
+    color: var(--red-color);
 }
 
 .mobileMenu {
@@ -41,7 +41,7 @@
     top: 65px; 
     left: 0;
     right: 0;
-    background-color: #F5F9FF;
+    background-color: var(--background-color);
     z-index: 1000;
     padding: 16px;
     overflow: hidden;
@@ -69,7 +69,7 @@
 }
 
 .mobileNav li {
-    color: #041E49;
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
@@ -79,7 +79,7 @@
 }
 
 .mobileNav li:hover {
-    color: #D50032;
+    color: var(--red-color);
 }
 
 .mobileButtons {

@@ -1,6 +1,6 @@
 .cta-main-container {
     padding: clamp(30px, 3.5vw, 72px) clamp(60px, 10.7vw, 155px);
-    background-color: #F5F9FF;
+    background-color: var(--background-color);
     min-height: 445px;
     display: flex;
     justify-content: center;

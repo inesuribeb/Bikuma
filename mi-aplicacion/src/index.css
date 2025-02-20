@@ -10,3 +10,13 @@ html, body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+:root {
+  --primary-color: #041E49;
+  --secondary-color: #005EB8;
+  --red-color: #D50032;
+  --basic-color: #FFFFFF;
+  --background-color: #F5F9FF;
+  --footer-form-color: #0056A8;
+  --footer-form-button-color: #004C94;
+}

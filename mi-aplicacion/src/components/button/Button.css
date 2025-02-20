@@ -35,23 +35,23 @@
 }
 
 .solid {
-    background-color: #D50032;
-    color: white;
+    background-color: var(--red-color);
+    color: var(--basic-color);
     border: none;
     width: fit-content;
 }
 
 .solid:hover {
-    background-color: #b91c1c;
+    background-color: var(--red-color);
 }
 
 .outline {
     background-color: transparent;
-    border: 1px solid #1f2937;
-    color: #1f2937;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     width: fit-content;
 }
 
 .outline:hover {
-    background-color: #f3f4f6;
+    background-color: var(--background-color);
 }

@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: clamp(12px, 1.2vw, 16px) clamp(60px, 10.7vw, 155px);
-    background-color: #F5F9FF;
+    background-color: var(--background-color);
     margin: 0 auto;
     box-sizing: border-box;
     position: fixed;
@@ -34,7 +34,7 @@
 }
 
 .headerUl li {
-    color: #041E49;
+    color: var(--primary-color);
     font-weight: 700;
     font-size: clamp(11px, 1.1vw, 18px);
     cursor: pointer;
@@ -44,7 +44,7 @@
 }
 
 .headerUl li:hover {
-    color: #D50032;
+    color: var(--red-color);
 }
 
 .headerButtons {

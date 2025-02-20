@@ -5,8 +5,8 @@
     gap: 7rem;
     display: flex;
     flex-direction: row;
-    background-color: #005EB8;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--basic-color);
 }
 
 .col1,
@@ -84,7 +84,7 @@
 }
 
 .col2-menu nav li {
-    color: white;
+    color: var(--basic-color);
     font-weight: 700;
     font-size: clamp(11px, 1.1vw, 18px);
     cursor: pointer;

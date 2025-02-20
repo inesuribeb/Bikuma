@@ -1,6 +1,6 @@
 .newsletter-container {
     width: 100%;
-    background-color: #0056A8;
+    background-color: var(--footer-form-color);
     padding: 2rem;
     border-radius: 1rem;
     box-sizing: border-box;
@@ -11,7 +11,7 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 0.5rem;
-    color: white;
+    color: var(--basic-color);
     margin-top: 0;
 }
 
@@ -19,8 +19,7 @@
     font-weight: 400;
     font-size: clamp(10px, 1.1vw, 18px);
     text-align: center;
-
-    color: white;
+    color: var(--basic-color);
     margin-bottom: 2rem;
 }
 
@@ -43,15 +42,15 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: white;
+    color: var(--basic-color);
     font-size: clamp(9px, 0.9vw, 15px);
     margin-bottom: 0.75rem;
 
 }
 
 .submit-button {
-    background-color: #004C94;
-    color: white;
+    background-color: var(--footer-form-button-color);
+    color: var(--basic-color);
     padding: 1rem;
     border: none;
     border-radius: 2rem;
@@ -61,7 +60,7 @@
 }
 
 .submit-button:hover {
-    background-color: #D50032;
+    background-color: var(--red-color);
     transform: scale(1.05);
 }
 

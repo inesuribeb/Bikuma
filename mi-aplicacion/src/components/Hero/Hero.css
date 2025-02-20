@@ -4,14 +4,14 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem; 
-    background-color: #F5F9FF;
+    background-color: var(--background-color);
     padding: clamp(12px, 1.2vw, 16px) clamp(60px, 10.7vw, 155px);
     position: relative; 
 }
 
 .blue-background-overlay {
     position: absolute;
-    background-color: #2667B0;
+    background-color: var(--secondary-color);
     top: clamp(20px, 4vw, 46px);
     bottom: 0;
     bottom: clamp(12px, 1.2vw, 16px);
@@ -33,14 +33,14 @@
 
 .first-column-hc h1 {
     font-size: clamp(32px, 3.2vw, 53px);
-    color: #041E49;
+    color: var(--primary-color);
     line-height: clamp(1.2em, 4vw, 59px);
 }
 
 .first-column-hc p {
     width: 90%;
     font-size: clamp(16px, 1.3vw, 21px);
-    color: #041E49;
+    color: var(--primary-color);
     margin-bottom: 50px;
     line-height: clamp(20px, 3vw, 30px);
 }

@@ -1,5 +1,5 @@
 .product-section-container {
-    background-color: #F5F9FF;
+    background-color: var(--background-color);
     min-height: 614px;
     display: flex;
     flex-direction: column; 

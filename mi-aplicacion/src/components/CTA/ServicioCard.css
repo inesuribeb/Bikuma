@@ -4,10 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--basic-color);
     border-radius: clamp(16px, 2.22vw, 32px);
     transition: box-shadow 0.3s ease;
-    color: #041E49;
+    color: var(--primary-color);
 }
 
 .single-servicio-card img,
@@ -42,7 +42,7 @@
 }
 
 .single-servicio-card:hover {
-    box-shadow: 6px 6px 0px #041E49;
+    box-shadow: 6px 6px 0px var(--primary-color);
 }
 
 @media (max-width: 768px) {

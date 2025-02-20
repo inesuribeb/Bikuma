@@ -1,5 +1,5 @@
 .proyectos-main-container {
-    background-color: #F5F9FF;
+    background-color: var(--background-color);
     height: clamp(500px, 50vw, 785px);
     display: flex;
     flex-direction: column; 
